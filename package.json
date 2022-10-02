@@ -1,0 +1,14 @@
+{
+  "name": "cpsc8750-main",
+  "version": "1.0.0",
+  "description": "## Assignments  1. [Make a public website with fly.io](/publicWebsite.md)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gaura",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
