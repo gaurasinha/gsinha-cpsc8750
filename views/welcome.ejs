@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+    <title>An Example Title</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Hello, <%= name %>!</h1>
+    <p>This site was accessed at
+    <span id="accessedat"></span>
+    <script>
+      const d = new Date();
+      let text = d.toLocaleString();
+      document.getElementById("accessedat").innerHTML = text;
+</script></p>
+    <p>You are Visitor #<%= visitorId%>!</p>
+    <% if ( diff) { %>
+      <p>It has been <%= diff %> seconds since your last visit </p>
+    <% } else {%>
+      <p>You have never visited</p>
+    <% } %>
+    
+
+  </body>
+</html>

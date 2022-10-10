@@ -4,11 +4,14 @@
   "description": "## Assignments  1. [Make a public website with fly.io](/publicWebsite.md)",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "gaura",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
     "express": "^4.18.1"
   }
 }
