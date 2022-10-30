@@ -55,6 +55,12 @@ app.get("/trivia", async (req, res) => {
   const correctAnswer = results.correct_answer;
   answers.push(correctAnswer);
 
+  //Randomizing answers
+  idx = Math.floor(Math.random() * (4- 0) );
+  temp = answers[idx];
+  answers[idx] = answers[3];
+  answers[3] = temp;
+
   const makeAnswerMap = (correctAnswer, answers) => {
     const answerLinks = answers.map(answer => {
       return `<a href="javascript:alert('${answer === correctAnswer ? 'Correct!' : 'Incorrect, Please Try Again!'
